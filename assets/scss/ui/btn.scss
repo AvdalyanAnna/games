@@ -1,0 +1,41 @@
+.btn{
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: var(--fz-regular);
+  font-family: var(--lang-big);
+  font-size: var(--fz-text-20);
+  line-height: var(--line-height);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  &::before{
+    content: '';
+    position: absolute;
+    width: var(--btn-fone);
+    height: var(--btn-fone);
+    transform: rotate(45deg);
+    top: calc((var(--btn-fone) / 2) * -1);
+    right: calc((var(--btn-fone) / 2) * -1);
+  }
+  &-solid{
+    background: transparent;
+    border: 1px solid transparent;
+  }
+  &-dark{
+    border-color: var(--dark);
+
+  }
+  &-yellow{
+    background: var(--yellow);
+    color: var(--dark);
+    border-color: var(--yellow);
+    &::before{
+      background: var(--dark);
+    }
+  }
+
+}

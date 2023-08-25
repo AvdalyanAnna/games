@@ -1,0 +1,48 @@
+.header {
+  padding: 60px 0;
+  position: sticky;
+  background: var(--dark);
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-menu {
+    display: flex;
+    align-items: center;
+    font-weight: var(--fz-semibold);
+    font-size: var(--fz-text);
+    line-height: var(--line-height);
+
+    &-item {
+      margin-left: var(--header-gap);
+
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+    }
+
+    &-icon {
+      margin-right: var(--header-icon-gap);
+
+    }
+  }
+
+  &-btn {
+    padding: var(--header-btn);
+    margin-left: var(--header-btn-gap);
+  }
+  &-controle{
+    display: flex;
+    align-items: center;
+
+  }
+  &-team{
+    cursor: pointer;
+  }
+}
